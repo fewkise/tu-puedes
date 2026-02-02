@@ -1,0 +1,119 @@
+.sectionContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.textContainer {
+  width: 40%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainTitle {
+  font-size: 80px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.checkIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.checkIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imageContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.imagePlaceholder {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accessButton {
+  background-color: #3b3a5a;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+text-align: center;
+justify-self: flex-end;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.accessButton:hover {
+  background-color: #4b4a6a;
+}
+
+@media (max-width: 1000px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  .textContainer {
+  width: 100%;
+}
+
+  .imageContainer {
+    order: -1;
+    min-height: 250px;
+  }
+}

@@ -1,0 +1,197 @@
+/* SectionSlider.module.css */
+
+/* Контейнер-обертка для Swiper.js, чтобы реализовать отступ слева */
+.sliderContainerWrapper {
+    padding-left: 5rem; 
+    margin: 0 auto;
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto; 
+  margin-top: 3rem; 
+}
+
+.swiperSlide {
+  /* Это критично: задаем фиксированную ширину, чтобы контент не сжимался */
+  width: 500px; 
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.slideContent {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+/* --- Стили из вашего предыдущего запроса, адаптированные под модули --- */
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3b3a5a;
+}
+
+.trainerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trainerName {
+  font-size: 14px;
+  color: #666;
+}
+
+.trainerIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-size: cover;
+}
+
+.infoSection {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.label {
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 0.5rem;
+}
+
+.startButton {
+  background-color: #3b3a5a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+  margin-top: auto; 
+}
+
+/* --- Стили для среднего слайда (картинка до/после) --- */
+.imageContainer {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 450px; 
+}
+
+.beforeAfterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.imageLabel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #3b3a5a;
+    font-weight: bold;
+}
+
+/* --- Стили для правого слайда (цитата) --- */
+.quoteContainer {
+    position: relative;
+    background-color: #e0f2f1; 
+    padding: 40px;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.quoteIcon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 1;
+}
+
+.quoteText {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px; 
+}
+@media (max-width: 768px){
+    .sliderContainerWrapper {
+      padding-left: 2rem; 
+      margin: 0 auto;
+  }
+
+}
+@media (max-width: 560px){
+    .swiperSlide {
+    /* Это критично: задаем фиксированную ширину, чтобы контент не сжимался */
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+      .sliderContainerWrapper {
+      padding-left: 0.7rem; 
+      padding-right: 0px;
+      margin: 0 auto;
+  }
+}
+

@@ -1,0 +1,114 @@
+.footerContainer {
+  background-color: #3b3a5a; /* Темный цвет фона из макета */
+  color: white;
+  padding: 40px 120px; /* Увеличили горизонтальный паддинг для соответствия отступам */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Выравнивание элементов вверху */
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Отступ между ссылками и контактной информацией */
+}
+
+.linksContainer {
+  display: flex;
+  gap: 80px; /* Увеличили расстояние между колонками ссылок */
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Увеличили расстояние между ссылками внутри колонки */
+}
+
+.footerLink, .contactInfo {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footerLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px; /* Отступ между логотипом и кнопками */
+}
+
+.logo {
+  /* Стили для SVG логотипа */
+  width: 70px; /* Примерный размер логотипа на изображении */
+  height: auto;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 15px; /* Отступ между кнопками */
+}
+
+.button {
+  border: none;
+  padding: 12px 25px; /* Увеличенный паддинг для лучшего соответствия */
+  border-radius: 25px; /* Более скругленные углы */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.subscribeBtn {
+  background-color: #fff; /* Белый фон */
+  color: #bb4e81; /* Розовый/фиолетовый текст */
+}
+
+.loginBtn {
+  background-color: transparent; /* Прозрачный фон */
+  color: white;
+  border: 1px solid white; /* Белая обводка */
+}
+
+/* Адаптивность для мобильных устройств (max-width: 768px) */
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    padding: 40px 20px; /* Возвращаем стандартный мобильный паддинг */
+    gap: 40px;
+  }
+
+  .leftContent {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .linksContainer {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .rightContent {
+    align-items: center; 
+    width: 100%;
+    gap: 20px;
+  }
+}

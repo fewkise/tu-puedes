@@ -1,0 +1,169 @@
+.sectionContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  margin-top: 3rem;
+}
+
+.imageContainer {
+  flex: 1;
+  border-radius: 30px;
+}
+
+
+
+.contentContainer {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3b3a5a;
+}
+
+.trainerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trainerName {
+  font-size: 14px;
+  color: #666;
+}
+
+.trainerIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.infoSection {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.equipmentList {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.equipmentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+  text-align: center;
+}
+
+.equipmentIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipmentName {
+  font-size: 10px;
+  color: #666;
+}
+
+.startButton {
+  background-color: #3b3a5a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Это заставляет картинку заполнять контейнер, обрезая края */
+  border-radius: 30px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  height: 118px;
+  transition: transform 0.3s ease;
+}
+.label {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 1rem;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+  }
+    .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imageContainer {
+    order: -1;
+  }
+
+  .equipmentList {
+    flex-wrap: wrap;
+  }
+}
+

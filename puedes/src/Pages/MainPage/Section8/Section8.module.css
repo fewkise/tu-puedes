@@ -1,0 +1,106 @@
+.sectionContainer {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 5rem;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #3b3a5a; /* Темный цвет кнопки */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #4b4a6a;
+}
+
+.imageGrid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.imageContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  img {
+    scale: 40%;
+  }
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .imageContainer {
+    img {
+        scale: 50%;
+    }
+  }
+  .imageGrid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .imageContainer:nth-child(2),
+  .imageContainer:nth-child(3) {
+    display: none;
+  }
+
+  .textContainer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

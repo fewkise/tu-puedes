@@ -1,0 +1,108 @@
+.sectionContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.imageContainer {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 14px;
+  color: #3b3a5a;
+  font-weight: bold;
+}
+
+.input, .select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.dateGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.dateGroup .select {
+  flex: 1;
+}
+
+.submitButton {
+  background-color: #bb4e81;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  text-decoration: none; 
+  display: block; 
+  text-align: center;
+}
+.submitButton:hover {
+  background-color: #a34470;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    min-height: 250px;
+  }
+}

@@ -1,0 +1,114 @@
+.sectionContainer {
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
+.planCard {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+height: 300px;
+}
+
+.planHeader {
+  background-color: #bb4e81;
+  padding: 15px;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.planName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.planPrice {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.recommendedTag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  color: #A13B62;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.planBody {
+  background-color: #f9f9f9;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.planDescription {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.planFooter {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+.subscribeButton {
+  width: 100%;
+  background-color: #bb4e81;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.subscribeButton:hover {
+  background-color: #a34470;
+}
+
+@media (max-width: 768px) {
+  .plansGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .plansGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

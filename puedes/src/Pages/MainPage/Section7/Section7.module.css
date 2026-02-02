@@ -1,0 +1,53 @@
+.sectionContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #3b3a5a;
+  margin-bottom: 25px;
+}
+
+.trainersContainer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.trainerCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  max-width: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameOverlay {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  .trainersContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainerCard {
+    max-width: 100%;
+  }
+}
