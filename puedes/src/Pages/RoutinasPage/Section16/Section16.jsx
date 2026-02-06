@@ -52,7 +52,6 @@ const Section16 = () => {
       <div className={styles.categoriesGrid}>
         {categories.map((category) => (
           <div key={category.name} className={styles.categoryCard}>
-            {/* Используем img с импортированным URL и стилями обрезки */}
             <img src={category.imageUrl} alt={category.name} className={styles.categoryImagePlaceholder} />
             <div className={styles.categoryNameOverlay}>{category.name}</div>
           </div>
@@ -75,7 +74,6 @@ const Section16 = () => {
               </div>
               <div className={styles.trainerInfo}>
                 <p className={styles.trainerName}>{routine.trainer}</p>
-                {/* Место для фото тренера */}
                 <img src={routine.trainerImageUrl} alt={routine.trainer} className={styles.trainerImage} />
               </div>
             </div>

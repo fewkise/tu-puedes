@@ -65,4 +65,9 @@
 .buttonPrimary:hover, .buttonSecondary:hover {
     opacity: 0.9;
 }
+@media (max-width: 400px) {
+  .buttonSecondary {
+    display: none;
+  }
+}
 

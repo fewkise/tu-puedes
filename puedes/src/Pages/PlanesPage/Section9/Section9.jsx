@@ -56,7 +56,6 @@ const Section9 = () => {
           </div>
         </div>
 
-        {/* План 4: Mensual */}
         <div className={styles.planCard}>
           <div className={styles.planHeader}>
             <span className={styles.planName}>Mensual</span>

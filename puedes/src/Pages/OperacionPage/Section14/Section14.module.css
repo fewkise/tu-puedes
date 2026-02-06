@@ -117,3 +117,8 @@ justify-self: flex-end;
     min-height: 250px;
   }
 }
+@media (max-width: 768px) {
+  .mainTitle{
+    font-size: 45px;
+  }
+}
